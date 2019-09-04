@@ -1,0 +1,55 @@
+.working__table {
+  width: 770px;
+  border: 1px solid #C7C7C7; }
+
+.working__text {
+  padding-left: 30px;
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #37373F;
+  margin: 30px 0 20px; }
+
+.working__item--date {
+  display: flex;
+  align-items: center; }
+
+.working__item--price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #C7C7C7; }
+
+.working__text--bold {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #37373F;
+  margin: 10px 0; }
+
+.working__text--normal {
+  margin: 20px 0 0; }
+
+.working__text--bottom {
+  margin: 0 0 20px; }
+
+.working__btn {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FC9B09;
+  border: 2px solid #FC9B09;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 16px 33px;
+  transition: 0.3s; }
+
+.working__btn:hover {
+  background-color: #FC9B09;
+  color: white; }

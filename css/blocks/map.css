@@ -1,0 +1,58 @@
+.map__card {
+  background-color: white;
+  position: absolute;
+  width: 420px;
+  left: 390px;
+  top: 20px;
+  border: 1px solid #C7C7C7;
+  padding: 8px 0; }
+
+.map {
+  width: 100%;
+  position: relative; }
+
+.map__item {
+  display: flex;
+  align-items: center; }
+
+.map__wrap--ellipse {
+  width: 61px;
+  height: 61px;
+  position: relative;
+  background: url("../../images/Ellipse-orange.png"); }
+
+.map__number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.map__title {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  color: #37373F; }
+
+.map__text {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  color: #37373F; }
+
+.map__link, .map__link--invisible {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #5286EC;
+  text-decoration: none; }
+
+.map__invisible {
+  display: none; }
