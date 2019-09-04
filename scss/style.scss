@@ -1,4 +1,9 @@
-body {
-  box-sizing: border-box;
-  background-color: black;
-}
+@import "base";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/atomic";
+@import "blocks/booking";
+@import "blocks/overlay";
+@import "blocks/content";
+@import "blocks/gallery";
