@@ -1,0 +1,44 @@
+.gallery__title {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #37373F; }
+
+.gallery__wrap {
+  display: flex; }
+
+.gallery__photo {
+  width: 25%;
+  border-radius: 4px;
+  padding: 5px 0; }
+
+.gallery__img {
+  width: 276px;
+  height: 175px; }
+
+.gallery__wrap--secondary {
+  flex-direction: row-reverse; }
+
+.gallery__link, .gallery__link--invisible {
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: #5286EC;
+  cursor: pointer; }
+
+.gallery__arrow, .gallery__arrow--secondary {
+  padding-top: 3px; }
+
+.gallery__arrow--secondary {
+  transform: rotate(180deg); }
+
+.gallery__invisible {
+  display: none; }
