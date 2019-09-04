@@ -1,0 +1,77 @@
+.aboutme {
+  display: flex;
+}
+.aboutme__photo, .aboutme__promo {
+  width: 50%;
+}
+.aboutme__title {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #37373F;
+  margin: 37px 0 14px;
+}
+.aboutme__text {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #37373F;
+  margin: 0;
+}
+.aboutme__link, .aboutme__link1, .aboutme__link--invisible, .aboutme__link--invisible1 {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #5286EC;
+  text-decoration: none;
+}
+.aboutme__heart {
+  position: absolute;
+  top: 52px;
+  left: 412px;
+}
+.aboutme__photo {
+  text-align: center;
+  position: relative;
+}
+.aboutme__img {
+  margin-top: 68px;
+}
+.aboutme__name {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #37373F;
+  margin: 23px 0 0;
+}
+.aboutme__profession {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #37373F;
+  margin: 7px 0 11px;
+}
+.aboutme__profession-link, .aboutme__profession-close {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #5286EC;
+  text-decoration: none;
+}
+.aboutme__invisible, .aboutme__invisible1, .aboutme__photo--invisible {
+  display: none;
+}
