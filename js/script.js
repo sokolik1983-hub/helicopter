@@ -54,15 +54,6 @@ $('.feedback__link--close').on('click', function(){
     $('.feedback__link').css('display','block');
 });
 
-
-
-
-
-
-
-
-
-
 $('.map__link').on('click', function(){
     $('.map__invisible').css('display','block');
     $('.map__link').css('display','none');
@@ -71,3 +62,10 @@ $('.map__link--invisible').on('click', function(){
     $('.map__invisible').css('display','none');
     $('.map__link').css('display','block');
 });
+
+function agreeForm(f) {
+    // Если поставлен флажок, снимаем блокирование кнопки
+    if (f.agree.checked) f.submit.disabled = 0
+    // В противном случае вновь блокируем кнопку
+    else f.submit.disabled = 1
+}

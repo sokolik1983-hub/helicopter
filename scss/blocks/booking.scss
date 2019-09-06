@@ -1,14 +1,20 @@
 .booking {
+  text-align: center;
   padding: 22px;
   position: fixed;
-  background-color: white;
-  width: 400px;
-  height: 400px;
+  width: 615px;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   display: none;
   z-index: 100;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .booking__close {
   position: absolute;
@@ -17,4 +23,14 @@
   height: 50px;
   right: 22px;
   cursor: pointer;
+}
+.booking__text {
+  text-align: left;
+}
+.booking__colortext {
+  color: red;
+}
+
+input:invalid {
+  border: 1px solid red;
 }

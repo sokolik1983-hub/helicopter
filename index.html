@@ -38,6 +38,35 @@
     <div class="overlay"></div>
     <div class="booking">
         <div class="booking__close"></div>
+        <h3 class="booking__title">Бронирование</h3>
+            <form action="index.html" class="booking__form">
+                <label class="booking__text">Дата<span class="booking__colortext">*</span> <br>
+                    <input type="date" name="date">
+                </label>
+                <label class="booking__text">Email<span class="booking__colortext">*</span> <br>
+                    <input type="email" placeholder="Электронная почта">
+                </label>
+
+                <label class="booking__text">Имя<span class="booking__colortext">*</span> <br>
+                    <input type="text" name="name" placeholder="Имя" id="name" maxlength="16" required>
+                </label>
+                <label class="booking__text">Фамилия<span class="booking__colortext">*</span> <br>
+                    <input type="text" name="surname" placeholder="Фамилия" id="surname" maxlength="16" required>
+                </label>
+                <label class="booking__text">Телефон<span class="booking__colortext">*</span> <br>
+                    <input type="number" name="tel-num" placeholder="+7-911-200-00-00" id="tel-num" maxlength="14" required>
+                </label>
+                <label class="booking__text">Данные карты<span class="booking__colortext">*</span> <br>
+                    <input type="number" name="card" placeholder="Номер карты" id="card" maxlength="16" required></label>
+                    <div class="booking__wrap">
+                        <input type="month" name="month">
+                    <input type="number" name="cvv" placeholder="CVV" id="cvv" maxlength="3" required>
+                    </div>
+                <p><input type="checkbox" name="agree" onclick="agreeForm(this.form)">
+                    Я согласен со всеми условиями</p>
+                <p><input type="submit" name="submit" value="Далее" disabled></p>
+            </form>
+
     </div>
     <div class="container main__container pt-70">
         <div class="content">
@@ -366,7 +395,7 @@
                     <hr>
                 </div>
             </div>
-            <div class="feedback__bottom">
+            <div class="feedback__bottom pb-50">
                 <a href="#top-feedback" class="feedback__link">
                     <img src="images/Arrow.png" alt="arrow" class="feedback__img">
                     Показать Все (134)
@@ -406,7 +435,41 @@
 
 
 </main>
+<footer>
+    <div class="container">
+        <div class="social pb-40">
+            <div class="footer__logo pl-60">
+                <img src="images/footer__logo.png" alt="footer-logo">
+            </div>
+            <div class="social__wrap">
+                <a href="#" class="social__link">
+                    <img src="images/vk.png" alt="vkontakte" class="social__img">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="images/Facebook.png" alt="facebook" class="social__img">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="images/Instragram.png" alt="instagram" class="social__img">
+                </a>
+                <a href="#" class="social__link social__link--language">
+                    <img src="images/RU.png" alt="Ru" class="social__img">
+                    <img src="images/Arrow.png" alt="arrow" class="social__img">
+                </a>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="subfooter__wrap">
+                <img src="images/MC.png" alt="maestro" class="subfooter__img pl-60">
+                <img src="images/VISA.png" alt="maestro" class="subfooter__img pl-20">
+            </div>
+            <div class="subfooter__wrap pl-275">
+                <p class="subfooter__text">Тех. поддержка: 8(800)700-00-00</p>
+                <p class="subfooter__text">© 2018 HELYFLY. All Rights Reserved.</p>
+            </div>
+        </div>
 
+    </div>
+</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  justify-content: space-between; }
+
+.social__wrap {
+  display: flex;
+  align-items: center; }
+
+.social__link--language {
+  display: flex;
+  align-items: center; }
+
+.social__link {
+  padding-left: 30px; }

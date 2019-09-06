@@ -1,0 +1,11 @@
+.subfooter {
+  display: flex;
+  align-items: center; }
+
+.subfooter__text {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B3B3B3; }

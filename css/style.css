@@ -147,6 +147,15 @@ hr {
 .pl-20 {
   padding-left: 20px; }
 
+.pl-30 {
+  padding-left: 30px; }
+
+.pl-60 {
+  padding-left: 60px; }
+
+.pl-275 {
+  padding-left: 275px; }
+
 .mt-10 {
   margin-top: 10px; }
 
@@ -168,17 +177,29 @@ hr {
 .pb-35 {
   padding-bottom: 35px; }
 
+.pb-40 {
+  padding-bottom: 40px; }
+
+.pb-50 {
+  padding-bottom: 50px; }
+
 .booking {
+  text-align: center;
   padding: 22px;
   position: fixed;
-  background-color: white;
-  width: 400px;
-  height: 400px;
+  width: 615px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 100; }
+  z-index: 100;
+  background: #FFFFFF;
+  border-radius: 6px; }
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .booking__close {
   position: absolute;
@@ -187,6 +208,15 @@ hr {
   height: 50px;
   right: 22px;
   cursor: pointer; }
+
+.booking__text {
+  text-align: left; }
+
+.booking__colortext {
+  color: red; }
+
+input:invalid {
+  border: 1px solid red; }
 
 .overlay {
   background: #000000;
@@ -497,8 +527,7 @@ hr {
   display: none; }
 
 .feedback {
-  width: 50%;
-  height: 200px; }
+  width: 50%; }
 
 .feedback__title {
   margin: 130px 0 50px; }
@@ -564,3 +593,30 @@ hr {
   width: 100%;
   display: flex;
   justify-content: flex-end; }
+
+.social {
+  display: flex;
+  justify-content: space-between; }
+
+.social__wrap {
+  display: flex;
+  align-items: center; }
+
+.social__link--language {
+  display: flex;
+  align-items: center; }
+
+.social__link {
+  padding-left: 30px; }
+
+.subfooter {
+  display: flex;
+  align-items: center; }
+
+.subfooter__text {
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B3B3B3; }
