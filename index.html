@@ -37,35 +37,63 @@
 <main>
     <div class="overlay"></div>
     <div class="booking">
-        <div class="booking__close"></div>
+        <div class="booking__close">
+            <img src="images/Close.png" alt="close" class="booking__close-img">
+        </div>
         <h3 class="booking__title">Бронирование</h3>
-            <form action="index.html" class="booking__form">
-                <label class="booking__text">Дата<span class="booking__colortext">*</span> <br>
-                    <input type="date" name="date">
-                </label>
-                <label class="booking__text">Email<span class="booking__colortext">*</span> <br>
-                    <input type="email" placeholder="Электронная почта">
-                </label>
+        <form action="index.html" class="booking__form">
 
-                <label class="booking__text">Имя<span class="booking__colortext">*</span> <br>
-                    <input type="text" name="name" placeholder="Имя" id="name" maxlength="16" required>
+            <p class="booking__text">Дата<span class="booking__colortext">*</span></p>
+            <label>
+                <input type="date" name="date" class="booking__input booking__input--color" required>
+                <img src="images/Group%205.5.png" alt="img" class="booking__date-img">
+            </label>
+            <p class="booking__text">Еmаil<span class="booking__colortext">*</span></p>
+            <label>
+                <input type="email" placeholder="Электронная почта" class="booking__input" required>
+            </label>
+            <p class="booking__text">Имя<span class="booking__colortext">*</span></p>
+            <label>
+                <input type="text" name="name" placeholder="Имя" id="name" maxlength="16" required
+                       class="booking__input">
+            </label>
+            <p class="booking__text">Фамилия<span class="booking__colortext">*</span></p>
+            <label>
+                <input type="text" name="surname" placeholder="Фамилия" id="surname" maxlength="16" required
+                       class="booking__input">
+            </label>
+            <p class="booking__text">Телефон<span class="booking__colortext">*</span></p>
+            <label>
+                <input type="number" name="tel-num" placeholder="+7-911-200-00-00" id="tel-num" maxlength="14" required
+                       class="booking__input">
+            </label>
+            <p class="booking__text">Данные карты<span class="booking__colortext">*</span></p>
+            <label>
+                <input type="number" name="card" placeholder="Номер карты" id="card" maxlength="16" required
+                       class="booking__input"></label>
+            <div class="booking__wrap">
+                <label for="month">
+                    <input type="number" name="month" placeholder="12/21" id="month" maxlength="5" required
+                           class="booking__input--short">
                 </label>
-                <label class="booking__text">Фамилия<span class="booking__colortext">*</span> <br>
-                    <input type="text" name="surname" placeholder="Фамилия" id="surname" maxlength="16" required>
+                <label for="cvv">
+                    <input type="number" name="cvv" placeholder="CVV" id="cvv" maxlength="3" required
+                           class="booking__input--short ml--8">
                 </label>
-                <label class="booking__text">Телефон<span class="booking__colortext">*</span> <br>
-                    <input type="number" name="tel-num" placeholder="+7-911-200-00-00" id="tel-num" maxlength="14" required>
-                </label>
-                <label class="booking__text">Данные карты<span class="booking__colortext">*</span> <br>
-                    <input type="number" name="card" placeholder="Номер карты" id="card" maxlength="16" required></label>
-                    <div class="booking__wrap">
-                        <input type="month" name="month">
-                    <input type="number" name="cvv" placeholder="CVV" id="cvv" maxlength="3" required>
-                    </div>
-                <p><input type="checkbox" name="agree" onclick="agreeForm(this.form)">
-                    Я согласен со всеми условиями</p>
-                <p><input type="submit" name="submit" value="Далее" disabled></p>
-            </form>
+            </div>
+
+            <div class="booking__wrap booking__wrap--submit">
+                <input type="checkbox" name="agree" id="agree" class="booking__checkbox" onclick="agreeForm(this.form)">
+                <div class="booking__chbox-text"><label for="agree">Я
+                    согласен с пользовательским <br> соглашением и публичной офертой</label></div>
+
+
+                <label for="submit"></label>
+                <input type="submit" name="submit" id="submit" class="booking__btn" value="Забронировать" disabled>
+            </div>
+
+
+        </form>
 
     </div>
     <div class="container main__container pt-70">
@@ -113,7 +141,7 @@
                         allowfullscreen></iframe>
             </div>
             <div class="gallery">
-                <a name="inv-gallery"></a>
+                <a id="inv-gallery"></a>
                 <h3 class="gallery__title">Фотографии пакета:</h3>
                 <div class="gallery__wrap">
                     <div class="gallery__photo">
@@ -202,7 +230,7 @@
     </div>
     <div class="container">
         <div class="aboutme">
-            <a name="top-aboutme"></a>
+            <a id="top-aboutme"></a>
             <div class="aboutme__promo">
                 <h4 class="aboutme__title">Об организаторе:</h4>
                 <p class="aboutme__text">Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом
@@ -282,7 +310,7 @@
     </div>
 
     <div class="map mt-80">
-        <a name="top-mapmenu"></a>
+        <a id="top-mapmenu"></a>
         <div class="map__card">
             <div class="map__item ml-30 mt-43">
                 <div class="map__wrap map__wrap--ellipse">
@@ -352,7 +380,7 @@
                 </div>
             </div>
             <div class="feedback__item">
-                <a name="top-feedback"></a>
+                <a id="top-feedback"></a>
                 <img src="images/Ellipse(photo2).png" alt="" class="feedback__img">
                 <div class="feedback__wrap">
                     <h3 class="feedback__name">Виталий Петров</h3>
@@ -419,8 +447,10 @@
                                 снова!</p>
                         </div>
                         <p class="feedback__profession">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!!
-                            Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому
-                            воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда
+                            Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много
+                            фоткались,поэтому
+                            воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя,
+                            правда
                             некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено.
                             Оценка: пять!</p>
                         <p class="feedback__profession feedback__profession--light pt-20 pb-35">11 Апреля, 2019г.</p>

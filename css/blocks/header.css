@@ -84,4 +84,8 @@
   text-align: center;
   color: #FFFFFF;
   padding: 23px;
-  margin-top: 22px; }
+  margin-top: 22px;
+  transition: .3s; }
+
+.header__btn:hover {
+  background-color: #FC9B09; }

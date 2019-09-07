@@ -69,3 +69,41 @@ function agreeForm(f) {
     // В противном случае вновь блокируем кнопку
     else f.submit.disabled = 1
 }
+$(function(){
+
+    $('.gallery__link').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#inv-gallery').offset().top }, 1000);
+        e.preventDefault();
+    });
+
+});
+
+$(function(){
+
+    $('.aboutme__link,.aboutme__link1,.aboutme__profession-link').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#top-aboutme').offset().top }, 1000);
+        e.preventDefault();
+    });
+
+});
+$(function(){
+
+    $('.map__link').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#top-mapmenu').offset().top }, 1000);
+        e.preventDefault();
+    });
+
+});
+$(function(){
+
+    $('.feedback__link').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#top-feedback').offset().top }, 1000);
+        e.preventDefault();
+    });
+
+});
+
+
+
+
+

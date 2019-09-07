@@ -1,8 +1,6 @@
 .booking {
-  text-align: center;
-  padding: 22px;
+  padding: 22px 100px;
   position: fixed;
-  width: 615px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -13,22 +11,112 @@
 
 .booking__form {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
 
 .booking__close {
   position: absolute;
-  background-color: black;
-  width: 50px;
-  height: 50px;
+  width: 21px;
+  height: 21px;
   right: 22px;
   cursor: pointer; }
 
+.booking__title {
+  font-family: "Montserrat", Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #37373F; }
+
 .booking__text {
-  text-align: left; }
+  text-align: left;
+  font-family: "Montserrat",Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F;
+  margin: 10px 0; }
+
+.booking__input, .booking__input--short {
+  width: 420px;
+  height: 44px;
+  border: 1px solid lightgrey;
+  padding-left: 20px; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.booking__input:focus {
+  border: 1px solid deepskyblue; }
+
+.booking__input--short {
+  width: 201px;
+  height: 44px;
+  border-top-color: transparent; }
 
 .booking__colortext {
   color: red; }
 
-input:invalid {
-  border: 1px solid red; }
+.booking__checkbox {
+  font-family: "Montserrat", Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F;
+  position: absolute;
+  left: -5px;
+  top: 34px; }
+
+.booking__chbox-text {
+  font-family: "Montserrat", Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F;
+  position: absolute;
+  left: 20px;
+  top: 34px; }
+
+.booking__btn {
+  cursor: pointer;
+  height: 72px;
+  border: 1px solid #FC9B09;
+  background-color: #FC9B09;
+  border-radius: 3px;
+  width: 390px;
+  font-family: "Montserrat", Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  transition: .3s;
+  opacity: 0.5;
+  margin: 97px 0 61px; }
+
+#agree:checked ~ .booking__btn {
+  opacity: 1; }
+
+.booking__wrap--submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background-color: transparent;
+  width: 31px;
+  height: 31px;
+  z-index: 1; }
+
+.booking__date-img {
+  position: absolute;
+  right: 110px;
+  top: 150px; }
