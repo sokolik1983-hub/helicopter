@@ -1,5 +1,5 @@
 .working__table {
-  width: 770px;
+  width: 100%;
   border: 1px solid #C7C7C7; }
 
 .working__text {
@@ -53,3 +53,15 @@
 .working__btn:hover {
   background-color: #FC9B09;
   color: white; }
+
+@media screen and (max-width: 768px) {
+  .working__item {
+    flex-direction: column; }
+  .working__text {
+    padding: 0; }
+  .working__table {
+    border: none; }
+  .working__btn {
+    margin: 0 0 10px 0; }
+  .working__img {
+    margin: 0 0 10px 0; } }

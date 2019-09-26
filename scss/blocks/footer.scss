@@ -1,0 +1,10 @@
+
+.footer__logo {
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    padding: 0;
+  }
+}

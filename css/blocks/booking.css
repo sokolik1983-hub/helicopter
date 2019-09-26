@@ -89,7 +89,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #FC9B09;
   background-color: #FC9B09;
   border-radius: 3px;
-  width: 390px;
+  width: 90%;
   font-family: "Montserrat", Helvetica,sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -120,3 +120,40 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
   right: 110px;
   top: 150px; }
+
+@media screen and (max-width: 768px) {
+  .booking {
+    width: 90%;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0; }
+  .booking__form {
+    text-align: center; }
+  .booking__wrap {
+    display: flex;
+    align-items: center; }
+  .booking__input, .booking__input--short {
+    width: 90%;
+    height: 20px; }
+  .booking__input--short {
+    width: 80%;
+    margin: 0 0 0 25px; }
+  .booking__title {
+    line-height: 20px;
+    margin: 10px; }
+  .booking__text {
+    text-align: center;
+    margin: 5px 0; }
+  .booking__btn {
+    height: 50px; }
+  .booking__date-img {
+    width: 20px;
+    right: 5%;
+    top: 81px; } }
+
+@media screen and (max-width: 450px) {
+  .booking__input--short {
+    width: 80%;
+    margin: 0; } }

@@ -11,3 +11,16 @@
   line-height: 17px;
   color: #B3B3B3;
 }
+
+@media screen and (max-width: 768px) {
+  .subfooter {
+    flex-direction: column;
+  }
+  .subfooter__wrap--secondary {
+    padding: 0;
+    flex-direction: column;
+  }
+  .subfooter__img {
+    padding: 0;
+  }
+}

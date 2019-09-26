@@ -18,9 +18,9 @@
   width: 276px;
   height: 175px;
 }
-.gallery__wrap--secondary {
-  flex-direction: row-reverse;
-}
+//.gallery__wrap--secondary {
+//  flex-direction: row-reverse;
+//}
 .gallery__link, .gallery__link--invisible {
   display: block;
   margin: 40px auto;
@@ -42,4 +42,17 @@
 }
 .gallery__invisible {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .gallery__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__photo {
+    width: 100%;
+    text-align: center;
+  }
+  .gallery__title {
+    text-align: center;
+  }
 }

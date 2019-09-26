@@ -56,4 +56,24 @@
   bottom: 29px; }
 
 .content__youtube {
-  display: none; }
+  display: none;
+  width: 50%;
+  height: auto;
+  border: none; }
+
+.content__item--bottom {
+  border-bottom: 2px solid darkgrey; }
+
+@media screen and (max-width: 768px) {
+  .content__wrap {
+    flex-direction: column;
+    align-items: center; }
+  .content__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+  .content__video {
+    width: 100%;
+    margin: 0; }
+  .content__info {
+    width: 90%; } }

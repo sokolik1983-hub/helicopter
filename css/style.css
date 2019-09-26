@@ -1,3 +1,6 @@
+body {
+  box-sizing: border-box; }
+
 @font-face {
   src: url("../fonts/Montserrat.ttf");
   font-family: "Montserrat"; }
@@ -17,7 +20,7 @@ body {
   min-width: 320px; }
 
 .container {
-  width: 1132px;
+  max-width: 1132px;
   margin: 0 auto; }
 
 .colortext {
@@ -25,6 +28,17 @@ body {
 
 hr {
   border: 0.5px solid #C7C7C7; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    text-align: center; } }
 
 .header__top {
   width: 50%;
@@ -47,7 +61,8 @@ hr {
   color: #37373F; }
 
 .header__text--telephone {
-  color: lightgray; }
+  color: lightgray;
+  margin-left: 50px; }
 
 .header__title {
   font-family: "Montserrat",Helvetica,sans-serif;
@@ -56,7 +71,8 @@ hr {
   font-size: 40px;
   line-height: 49px;
   color: #FFFFFF;
-  padding-top: 286px; }
+  padding-top: 286px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 .header__price {
   background: url("../../images/Rectangle 6.2.png");
@@ -113,13 +129,35 @@ hr {
   color: #FFFFFF;
   padding: 23px;
   margin-top: 22px;
-  transition: .3s; }
+  transition: .3s;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 .header__btn:hover {
   background-color: #FC9B09; }
 
+@media screen and (max-width: 768px) {
+  .header__background {
+    width: 100%; }
+  .header__top {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center; }
+  .header__price, .header__btn {
+    margin: 20px auto; }
+  .header__btn {
+    width: 200px; }
+  .header__text--telephone {
+    margin: 0; } }
+
 .main__line {
   margin-top: 50px; }
+
+.footer__logo {
+  padding-left: 60px; }
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    padding: 0; } }
 
 .m-0 {
   margin: 0; }
@@ -281,7 +319,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #FC9B09;
   background-color: #FC9B09;
   border-radius: 3px;
-  width: 390px;
+  width: 90%;
   font-family: "Montserrat", Helvetica,sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -312,6 +350,43 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
   right: 110px;
   top: 150px; }
+
+@media screen and (max-width: 768px) {
+  .booking {
+    width: 90%;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0; }
+  .booking__form {
+    text-align: center; }
+  .booking__wrap {
+    display: flex;
+    align-items: center; }
+  .booking__input, .booking__input--short {
+    width: 90%;
+    height: 20px; }
+  .booking__input--short {
+    width: 80%;
+    margin: 0 0 0 25px; }
+  .booking__title {
+    line-height: 20px;
+    margin: 10px; }
+  .booking__text {
+    text-align: center;
+    margin: 5px 0; }
+  .booking__btn {
+    height: 50px; }
+  .booking__date-img {
+    width: 20px;
+    right: 5%;
+    top: 81px; } }
+
+@media screen and (max-width: 450px) {
+  .booking__input--short {
+    width: 80%;
+    margin: 0; } }
 
 .overlay {
   background: #000000;
@@ -382,7 +457,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
   bottom: 29px; }
 
 .content__youtube {
-  display: none; }
+  display: none;
+  width: 50%;
+  height: auto;
+  border: none; }
+
+.content__item--bottom {
+  border-bottom: 2px solid darkgrey; }
+
+@media screen and (max-width: 768px) {
+  .content__wrap {
+    flex-direction: column;
+    align-items: center; }
+  .content__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+  .content__video {
+    width: 100%;
+    margin: 0; }
+  .content__info {
+    width: 90%; } }
 
 .gallery__title {
   font-family: "Montserrat",Helvetica,sans-serif;
@@ -403,9 +498,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .gallery__img {
   width: 276px;
   height: 175px; }
-
-.gallery__wrap--secondary {
-  flex-direction: row-reverse; }
 
 .gallery__link, .gallery__link--invisible {
   display: block;
@@ -428,6 +520,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .gallery__invisible {
   display: none; }
+
+@media screen and (max-width: 768px) {
+  .gallery__wrap {
+    flex-direction: column;
+    align-items: center; }
+  .gallery__photo {
+    width: 100%;
+    text-align: center; }
+  .gallery__title {
+    text-align: center; } }
 
 .aboutme {
   display: flex; }
@@ -506,8 +608,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .aboutme__invisible, .aboutme__invisible1, .aboutme__photo--invisible {
   display: none; }
 
+@media screen and (max-width: 768px) {
+  .aboutme__heart {
+    position: static; }
+  .aboutme {
+    flex-direction: column;
+    align-items: center; } }
+
 .working__table {
-  width: 770px;
+  width: 100%;
   border: 1px solid #C7C7C7; }
 
 .working__text {
@@ -561,6 +670,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .working__btn:hover {
   background-color: #FC9B09;
   color: white; }
+
+@media screen and (max-width: 768px) {
+  .working__item {
+    flex-direction: column; }
+  .working__text {
+    padding: 0; }
+  .working__table {
+    border: none; }
+  .working__btn {
+    margin: 0 0 10px 0; }
+  .working__img {
+    margin: 0 0 10px 0; } }
 
 .map__card {
   background-color: white;
@@ -620,6 +741,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .map__invisible {
   display: none; }
+
+.map__yandex {
+  width: 100%;
+  height: 509px;
+  border: none; }
+
+@media screen and (max-width: 768px) {
+  .map {
+    display: flex;
+    flex-direction: column; }
+  .map__card {
+    position: static;
+    width: 100%;
+    border: none; } }
 
 .feedback {
   width: 50%; }
@@ -689,6 +824,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: flex-end; }
 
+@media screen and (max-width: 768px) {
+  .feedback {
+    width: 100%; }
+  .feedback__wrap {
+    padding: 0; }
+  .feedback__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0; }
+  .feedback__img {
+    margin: 0 auto; }
+  .feedback__groupstars {
+    flex-direction: column; } }
+
 .social {
   display: flex;
   justify-content: space-between; }
@@ -704,6 +855,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .social__link {
   padding-left: 30px; }
 
+@media screen and (max-width: 768px) {
+  .social__wrap {
+    justify-content: space-around;
+    padding: 10px; }
+  .social {
+    flex-direction: column; } }
+
 .subfooter {
   display: flex;
   align-items: center; }
@@ -715,3 +873,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 17px;
   color: #B3B3B3; }
+
+@media screen and (max-width: 768px) {
+  .subfooter {
+    flex-direction: column; }
+  .subfooter__wrap--secondary {
+    padding: 0;
+    flex-direction: column; }
+  .subfooter__img {
+    padding: 0; } }

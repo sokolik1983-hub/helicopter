@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helicopter</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,9 +11,9 @@
     <div class="container">
         <div class="header__top">
             <a href="#" class="header__link">
-                <img src="images/vector.png" alt="logo" class="header__img">
+                <img src="images/Vector.png" alt="logo" class="header__img">
             </a>
-            <p class="header__text header__text--telephone ml-50">Телефон: </p>
+            <p class="header__text header__text--telephone">Телефон: </p>
             <p class="header__text">8(800)-123-12-12</p>
         </div>
     </div>
@@ -117,27 +118,23 @@
                             <img src="images/map-pin-marked.png" alt="icon" class="content__icon">
                             <p class="content__icon-text">Москва</p>
                         </li>
-                        <li class="content__item">
+                        <li class="content__item content__item--bottom">
                             <img src="images/speech-bubble.png" alt="icon" class="content__icon">
                             <p class="content__icon-text">Готовы ответить на любые вопросы</p>
                         </li>
-                        <hr>
-                        <li class="content__item">
+                        <li class="content__item content__item--bottom">
                             <img src="images/Groupcup.png" alt="icon" class="content__icon">
                             <p class="content__icon-text">Более 50 отзывов с оценкой</p>
                             <img src="images/Group%208.3.png" alt="stars"
                                  class="content__icon content__icon--rating ml-14">
                         </li>
-                        <hr>
                     </ul>
                 </div>
 
                 <div class="content__video">
                     <img src="images/Vector%202.png" alt="play" class="content__videoplay">
                 </div>
-                <iframe class="content__youtube" width="560" height="315"
-                        src="https://www.youtube.com/embed/Uon2WYPfdgc"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe class="content__youtube" src="https://www.youtube.com/embed/Uon2WYPfdgc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
             </div>
             <div class="gallery">
@@ -353,8 +350,7 @@
                 </div>
             </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A38e167d42e884d4259cfe228289cb1bd3c52f5ae9c5facce26dcb8dee2a40239&amp;source=constructor"
-                width="100%" height="509" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A38e167d42e884d4259cfe228289cb1bd3c52f5ae9c5facce26dcb8dee2a40239&amp;source=constructor" class="map__yandex"></iframe>
     </div>
     <div class="container">
         <div class="feedback">
@@ -468,7 +464,7 @@
 <footer>
     <div class="container">
         <div class="social pb-40">
-            <div class="footer__logo pl-60">
+            <div class="footer__logo">
                 <img src="images/footer__logo.png" alt="footer-logo">
             </div>
             <div class="social__wrap">
@@ -492,7 +488,7 @@
                 <img src="images/MC.png" alt="maestro" class="subfooter__img pl-60">
                 <img src="images/VISA.png" alt="maestro" class="subfooter__img pl-20">
             </div>
-            <div class="subfooter__wrap pl-275">
+            <div class="subfooter__wrap subfooter__wrap--secondary pl-275">
                 <p class="subfooter__text">Тех. поддержка: 8(800)700-00-00</p>
                 <p class="subfooter__text">© 2018 HELYFLY. All Rights Reserved.</p>
             </div>
@@ -500,7 +496,8 @@
 
     </div>
 </footer>
-</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
+</body>
+
 </html>

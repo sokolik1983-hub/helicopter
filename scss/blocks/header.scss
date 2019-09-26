@@ -23,6 +23,7 @@
 }
 .header__text--telephone {
   color: lightgray;
+  margin-left: 50px;
 }
 .header__title {
   font-family: "Montserrat",Helvetica,sans-serif;
@@ -32,6 +33,7 @@
   line-height: 49px;
   color: #FFFFFF;
   padding-top: 286px;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 .header__price {
   background: url("../../images/Rectangle 6.2.png");
@@ -89,8 +91,28 @@
   padding: 23px;
   margin-top: 22px;
   transition: .3s;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 .header__btn:hover {
 
   background-color: #FC9B09;
+}
+@media screen and (max-width: 768px) {
+  .header__background {
+    width: 100%;
+  }
+  .header__top {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__price, .header__btn {
+    margin: 20px auto;
+  }
+  .header__btn {
+    width: 200px;
+  }
+  .header__text--telephone {
+    margin: 0;
+  }
 }

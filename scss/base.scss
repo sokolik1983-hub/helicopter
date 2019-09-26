@@ -1,4 +1,6 @@
-
+body {
+  box-sizing: border-box;
+}
 @font-face {
   src: url("../fonts/Montserrat.ttf");
   font-family: "Montserrat";
@@ -18,7 +20,7 @@ body {
   min-width: 320px;
 }
 .container {
-  width: 1132px;
+  max-width: 1132px;
   margin: 0 auto;
 }
 .colortext {
@@ -26,4 +28,16 @@ body {
 }
 hr {
   border: 0.5px solid #C7C7C7;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+@media screen and (max-width: 768px){
+  .container {
+    width: 100%;
+    text-align: center;
+  }
 }
